@@ -25,7 +25,7 @@ const renderCard = (dataArr) => {
   cardContainer.innerHTML = '';
   localData.forEach((card, i) => {
     if (i === localData.length - 1) {
-      let html = `<div id="observe" class="col-span-4 rounded-sm border-2">
+      let html = `<div id="observe" class="col-span-3 rounded-sm border-2">
     <img
       src="${card.category.image}"
       class="w-full object-cover h-48"
@@ -37,7 +37,7 @@ const renderCard = (dataArr) => {
     </div>`;
       cardContainer.innerHTML += html;
     } else {
-      let html = `<div class="col-span-4 rounded-sm border-2">
+      let html = `<div class="col-span-3 rounded-sm border-2">
     <img
       src="${card.category.image}"
       class="w-full object-cover h-48"
